@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--第十一小组制作！组员：鞠展，王璐塞，徐朝磊
+------html制作人鞠展---=------------------------------->
+<html>
+<head>
+<title>第十一小组作业</title>
+<link rel="stylesheet" href="css/kube.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/custom.min.css" />
+<link rel="shortcut icon" href="img/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<style>
+	.intro h1:before {
+		content: '小组';
+	}
+</style>
+</head>
+<body>
+
+<div class="main-nav">
+	<div class="container">
+		<header class="group top-nav">
+			<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				<span class="logo">小组</span>
+			</div>
+			<nav id="navbar-1" class="navbar item-nav">
+				<ul>
+					<li class="active"><a href="#about">关于</a></li>
+					<li><a href="#experiences">经验</a></li>
+					<li><a href="#achievements">成就</a></li>
+					<li><a href="#skills">技能</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+</div>
+
+<div class="intro section" id="about">
+	<div class="container">
+		<p>你好，我们是来自软件技术一班的小组</p>
+		<div class="units-row units-split wrap">
+			<div class="unit-20">
+				<img src="img/ava.jpg" alt="Avatar">
+			</div>
+			<div class="unit-80">
+				<h1>我们是<br><span id="typed"></span></h1>
+			</div>
+			<p>
+				网络规划的合作小组，经过我们讨论，我们简单的合作做出了这个网页，这个网页是一个简单的程序员求职的页面，在上面你可以展示你的工作经验和工作技能以及在工作方面取得的成就。
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="work section second" id="experiences">
+	<div class="container">
+		<h1>工作<br>经验</h1>
+		<ul class="work-list">
+			<li>2020-6-21</li>
+			<li><a href="#">创建html文档</a></li>
+		</ul>
+		<ul class="work-list">
+			<li>2020-6-22</li>
+			<li><a href="#">创建css框架</a></li>
+		</ul>
+		<ul class="work-list">
+			<li>2020-6-25</li>
+			<li><a href="#">编写JS文件，完成网页</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="award section second" id="achievements">
+	<div class="container">
+		<h1>取得的<br>成就</h1>
+		<ul class="award-list list-flat">
+			<li>2018-10-20</li>
+			<li>写出了人生中第一个程序</li>
+		</ul>
+		<ul class="award-list list-flat">
+			<li>2019-7-4</li>
+			<li>完成了第一个课程设计</li>
+			<li>课程设计内容是：小型计算器</li>
+			<li>所用工具：VC++</li>
+		</ul>
+		<ul class="award-list list-flat">
+			<li>2019-12-24</li>
+			<li>完成了第二个课程设计</li>
+			<li>内容是：MFC简易画板</li>
+			<li>所用工具：VC++</li>
+		</ul>
+	</div>
+</div>
+
+<div class="skills section second" id="skills">
+	<div class="container">
+		<h1>展示<br>技能</h1>
+		<ul class="skill-list list-flat">
+			<li>前端的开发</li>
+			<li>学会的东西有：HTML / CSS / SASS / Javascript</li>
+		</ul>
+		<ul class="skill-list list-flat">
+			<li>数据库软件</li>
+			<li>掌握的数据库软件有：MySQL / MongoDB / Oracle / Access</li>
+		</ul>
+		<ul class="skill-list list-flat">
+			<li>后端的开发</li>
+			<li>掌握的技能有：jequery / ajax / js / selvet</li>
+		</ul>
+	</div>
+</div>
+
+<div class="quote">
+	<div class="container text-centered">
+		<h1>努力学习</h1>
+	</div>
+</div>
+
+<!-- Javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/kube.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+	function newTyped(){}$(function(){$("#typed").typed({
+	strings: ["聪明伶俐", "想象力丰富的", "网络规划小组"],
+
+	typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+</script>
+</body>
+</html>
